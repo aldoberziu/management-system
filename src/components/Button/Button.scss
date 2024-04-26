@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.button {
+  max-width: 100%;
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  position: relative;
+  &.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  p {
+    margin: 0;
+  }
+}
+.primary{
+  background-color: #33c4f0;
+  color: white;
+  transition: background-color 100ms ease;
+}
+.primary:hover{
+  background-color: #1eaedb;
+}
+.secondary{
+  background-color: none;
+  color: #1e1e1e;
+  border: 1px solid #c9c8c7;
+  transition: background-color 100ms ease;
+}
+.secondary:hover{
+  border: 1px solid #474747;
+}

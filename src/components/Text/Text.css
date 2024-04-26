@@ -1,0 +1,21 @@
+.h1 {
+  font-size: 46px;
+  line-height: 47px;
+  letter-spacing: -0.64px;
+}
+.sh1 {
+  font-size: 26px;
+  line-height: 30.5px;
+  letter-spacing: -0.32px;
+}
+.sh2 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+.h1, .sh1, .sh2 {
+  font-weight: 400;
+}
+.bold {
+  font-weight: 600 !important;
+}

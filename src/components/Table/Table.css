@@ -1,0 +1,8 @@
+.container{
+  margin: 20px 150px;
+}
+.sideButtons{
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+}

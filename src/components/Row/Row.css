@@ -1,0 +1,17 @@
+.header{
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 5fr;
+}
+.row{
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 5fr;
+  align-items: center;
+  padding: 10px 0;
+}
+hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #c9c8c7;
+  width: 100%;
+}
