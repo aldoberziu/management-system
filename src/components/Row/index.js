@@ -3,18 +3,20 @@ import Text from "../Text";
 import Button from "../Button";
 import { useDispatch } from "react-redux";
 import { usersActions } from "../../store";
+import { useNavigate } from "react-router-dom";
 
-const Row = ({ user, tableColumns }) => {
+const Row = ({ user, tableHeaders }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const deleteRow = (id) => {
     dispatch(usersActions.deleteUser(id));
   };
 
-  if (tableColumns) {
+  if (tableHeaders) {
     return (
       <>
         <div className="header">
-          {tableColumns.map((col) => (
+          {tableHeaders.map((col) => (
             <Text sh1 bold>
               {col}
             </Text>
@@ -34,7 +36,7 @@ const Row = ({ user, tableColumns }) => {
           <Button secondary onClick={() => deleteRow(user.id)}>
             Delete
           </Button>
-          <Button secondary>Edit</Button>
+          <Button secondary onClick={() => navigate(`/edit-user/${user.id}`)}>Edit</Button>
         </div>
       </div>
       <hr></hr>

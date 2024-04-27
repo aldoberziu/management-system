@@ -1,0 +1,16 @@
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input{
+  outline: none;
+  transition: border-color 200ms ease-in-out;
+  background-color: none;
+  border: 1px solid #c9c8c7;
+  border-radius: 5px;
+  padding: 10px;
+}
+input:focus{
+  border-color: #1eaedb;
+}
