@@ -39,3 +39,11 @@
 .secondary:hover{
   border: 1px solid #474747;
 }
+@media screen and (max-width: 768px) {
+  .button{
+    padding: 10px 15px;
+  }
+  .secondary{
+    flex-shrink: 0;
+  }
+}

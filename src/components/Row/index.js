@@ -32,7 +32,7 @@ const Row = ({ user, tableHeaders }) => {
         <Text sh2>{user.id}</Text>
         <Text sh2>{user.name}</Text>
         <Text sh2>{user.email}</Text>
-        <div className="displayFlex">
+        <div className="rowButtons">
           <Button secondary onClick={() => deleteRow(user.id)}>
             Delete
           </Button>

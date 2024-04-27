@@ -1,10 +1,17 @@
+.formContainer{
+  margin: 100px 200px;
+}
 .form{
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 200px;
-  margin: 100px 200px;
 }
 .formButton{
   width: auto;
+}
+@media screen and (max-width: 768px) {
+  .formContainer{
+    margin: 50px;
+  }
 }

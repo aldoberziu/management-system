@@ -5,8 +5,13 @@
 .row{
   display: grid;
   grid-template-columns: 1fr 5fr 5fr 5fr;
+  gap: 15px;
   align-items: center;
   padding: 10px 0;
+}
+.rowButtons{
+  display: flex;
+  gap: 5px;
 }
 hr{
   display: block;
@@ -14,4 +19,20 @@ hr{
   border: 0;
   border-top: 1px solid #c9c8c7;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 6fr 3fr;
+  }
+  .row{
+    grid-template-columns: 1fr 3fr 6fr 3fr;
+    padding: 5px 0;
+  }
+  .row span{
+    font-size: 13px;
+  }
+  .rowButtons{
+    flex-direction: column;
+  }
 }
